@@ -2,7 +2,7 @@ from strands import Agent, tool
 from strands_tools import calculator,current_time
 from strands.models import BedrockModel
 
-model = BedrockModel(model_id="us.amazon.nova-pro-v1:0"
+model = BedrockModel(model_id="amazon.nova-lite-v1:0"
                    )
 
 # Create an agent with tools 
@@ -18,4 +18,5 @@ I have 2  request:
 
 Use your python tools to confirm that the script works before outputting it
 """
+
 agent(message)
