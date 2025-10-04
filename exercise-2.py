@@ -2,7 +2,7 @@ from strands import Agent
 from strands_tools import http_request
 from strands.models import BedrockModel
 
-model = BedrockModel(model_id="amazon.nova-lite-v1:0,
+model = BedrockModel(model_id="amazon.nova-lite-v1:0",
                    streaming=True)
 
 WEATHER_SYSTEM_PROMPT = """You are a weather assistant with HTTP capabilities. You can:
@@ -50,3 +50,4 @@ if __name__ == "__main__":
             print(f"\nAn error occurred: {str(e)}")
 
             print("Please try a different request.")
+
