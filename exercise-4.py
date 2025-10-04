@@ -2,7 +2,7 @@ from strands import Agent
 from strands_tools import use_aws, current_time
 from strands.models import BedrockModel
 
-model = BedrockModel(model_id="us.amazon.nova-pro-v1:0",
+model = BedrockModel(model_id="amazon.nova-lite-v1:0",
                    streaming=True)
 
 Ask_Questions = """You are an AWS cloud  assistant. You can
@@ -44,5 +44,6 @@ if __name__ == "__main__":
         except Exception as e:
             print(f"\nAn error occurred: {str(e)}")
             print("Please try a different request.")
+
 
 #🤖     🛠️[📡 💰 Cost 
