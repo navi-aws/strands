@@ -23,7 +23,7 @@ if __name__ == "__main__":
     print("\n 💬 What do you want to know about your AWS Resources 💬\n")
     print("📚 🏗️  Using STRANDS in built tool called Use-AWS.🏗️  📚")
     print("\n                 Type 'exit' to quit 👋\n")
-    print("\ Example - aws sagemaker list-domains --region us-east-1 \n")
+    print("\n Example - aws sagemaker list-domains --region us-east-1 \n")
 
     while True:
         try:
@@ -48,4 +48,5 @@ if __name__ == "__main__":
 
 
 #🤖     🛠️[📡 💰 Cost 
+
 
