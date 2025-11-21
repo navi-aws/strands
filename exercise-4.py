@@ -41,4 +41,5 @@ if __name__ == "__main__":
             break
         except Exception as e:
             print(f"\nAn error occurred: {str(e)}")
-            print("Please try a different request.
+            print("Please try a different request.")
+
