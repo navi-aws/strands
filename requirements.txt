@@ -3,3 +3,5 @@ strands-agents-tools>=0.2.0
 boto3>=1.26.0
 botocore>=1.29.0
 requests
+# Web Search (for DuckDuckGo)
+duckduckgo-search
