@@ -1,4 +1,4 @@
-from strands import Agent
+from strands import Agent, tool
 from ddgs import DDGS
 from strands.models import BedrockModel
 
@@ -7,7 +7,7 @@ model = BedrockModel(model_id="amazon.nova-lite-v1:0"
 
 # Create a web search tool
 @tool
-def websearch(keywords: str, region: str = "us-en", max_results: int = 1) -> str:
+def websearch(keywords: str, region: str = "us-en", max_results: int = 5) -> str:
     try:
         results = DDGS().text(keywords, region=region, max_results=max_results)
         return results if results else "No results found."
@@ -27,3 +27,4 @@ Search wikipedia for the top 5 most popular dog breeds of 2024.
 """
 # Run the agent with the query
 response = dog_info(query)
+
