@@ -51,3 +51,4 @@ if __name__ == "__main__":
 
             print("Please try a different request.")
 
+#run again if it does not show the info first time
